@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HM様 キャリア分析・職種転換適性評価レポート</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-shadow { box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .highlight-badge { background: linear-gradient(45deg, #FFD700, #FFA500); }
+        .score-high { background: linear-gradient(45deg, #4CAF50, #45a049); }
+        .score-medium { background: linear-gradient(45deg, #FF9800, #F57C00); }
+        .score-low { background: linear-gradient(45deg, #9E9E9E, #757575); }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <div class="gradient-bg text-white py-8 mb-8">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl font-bold text-center mb-4">
+                <i class="fas fa-user-tie mr-3"></i>HM様 キャリア分析・職種転換適性評価レポート
+            </h1>
+            <p class="text-xl text-center opacity-90">P社 働き方アドバイザーによる包括的分析</p>
+            <div class="text-center mt-4 text-sm opacity-80">
+                分析日: 2024年12月 | 分析対象: HM様（P社勤続34年）
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-6 space-y-8">
+        <!-- 事前分析：現状キャリア評価 -->
+        <section class="bg-white rounded-lg p-8 card-shadow">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-blue-500 pb-2">
+                <i class="fas fa-star text-yellow-500 mr-3"></i>事前分析：現状キャリア評価
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-4">
+                            <i class="fas fa-trophy mr-2"></i>キャリアサマリ
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            HM様は34年間にわたりP社で卓越したキャリアを築いてこられました。国内営業から始まり、エアコン輸出、商品企画、海外マーケティング、新規事業開発まで、幅広い領域で豊富な経験を積まれています。特に、2001年のLGとのOEM主査、2003年のHAマーケ組織統合・立ち上げ、2006年の冷蔵庫アジア地域参入、2012年の業務用コールドチェーン海外組織立ち上げなど、組織の重要な転換点で中核的な役割を果たされてきました。
+                        </p>
+                    </div>
+
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-green-800 mb-4">
+                            <i class="fas fa-gem mr-2"></i>卓越した強み
+                        </h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span><strong>論理的思考・問題解決力：</strong> 複雑な課題に対する体系的なアプローチ</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span><strong>チームマネジメント・リーダーシップ：</strong> 組織横断的なプロジェクト推進力</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span><strong>プロジェクト管理・計画立案：</strong> 長期的視点での戦略的実行力</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span><strong>国際的コミュニケーション：</strong> 英語中級レベルでの海外事業推進</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-purple-800 mb-4">
+                            <i class="fas fa-heart mr-2"></i>人格的特性（際立つ個性）
+                        </h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-users text-purple-500 mt-1 mr-3"></i>
+                                <span><strong>協調性：</strong> 人と協力して物事を進める天性の能力</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-sync-alt text-purple-500 mt-1 mr-3"></i>
+                                <span><strong>適応力：</strong> 状況に応じて柔軟に考え方や行動を変えられる</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-handshake text-purple-500 mt-1 mr-3"></i>
+                                <span><strong>誠実性：</strong> 約束を守り、相手の立場に立って考える姿勢</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-purple-500 mt-1 mr-3"></i>
+                                <span><strong>前向き思考：</strong> 変化を機会として捉える積極的なマインドセット</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-yellow-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-yellow-800 mb-4">
+                            <i class="fas fa-medal mr-2"></i>特筆すべき長所
+                        </h3>
+                        <div class="text-gray-700 space-y-2">
+                            <p><strong>✨ 組織変革のリーダー：</strong> 重要な組織変革期において常に中心的役割を担当</p>
+                            <p><strong>✨ 国際感覚：</strong> 多様な海外市場での豊富な実務経験</p>
+                            <p><strong>✨ 新規開拓力：</strong> 未開拓市場や新規事業への参入実績</p>
+                            <p><strong>✨ 人材育成視点：</strong> 「自己学習の促進と環境整備」を重視する成熟した指導観</p>
+                            <p><strong>✨ 持続可能性重視：</strong> 社会的価値や環境への貢献を重要視する現代的価値観</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 詳細分析① ジョブクラフティング × SOC理論 -->
+        <section class="bg-white rounded-lg p-8 card-shadow">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-indigo-500 pb-2">
+                <i class="fas fa-cogs text-indigo-600 mr-3"></i>詳細分析①：ジョブクラフティング × SOC理論クロス分析
+            </h2>
+
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">分析フレームワーク説明</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h4 class="font-semibold text-blue-800 mb-3">ジョブクラフティング（仕事の再設計）</h4>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li><strong>業務クラフティング：</strong> タスクの範囲や内容の調整</li>
+                            <li><strong>関係性クラフティング：</strong> 職場での人間関係の構築・調整</li>
+                            <li><strong>認知的クラフティング：</strong> 仕事の意味や価値の再解釈</li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h4 class="font-semibold text-green-800 mb-3">SOC理論（成功的老化）</h4>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li><strong>選択（Selection）：</strong> 目標・活動の選択、基準調整</li>
+                            <li><strong>最適化（Optimization）：</strong> 得意分野への集中、優先順位設定</li>
+                            <li><strong>補償（Compensation）：</strong> 能力低下を補う手段の活用</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">9マトリックス クロス分析結果</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse border border-gray-300">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border border-gray-300 p-4 text-center font-semibold">クロス分析項目</th>
+                                <th class="border border-gray-300 p-4 text-center font-semibold">業務クラフティング</th>
+                                <th class="border border-gray-300 p-4 text-center font-semibold">関係性クラフティング</th>
+                                <th class="border border-gray-300 p-4 text-center font-semibold">認知的クラフティング</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 p-4 font-semibold bg-blue-50">選択（Selection）</td>
+                                <td class="border border-gray-300 p-4 text-center">
+                                    <div class="highlight-badge text-white font-bold py-2 px-4 rounded-lg">
+                                        🥇 92点
+                                    </div>
+                                    <div class="text-sm mt-2">新規事業・イノベーション志向の目標設定力</div>
+                                </td>
+                                <td class="border border-gray-300 p-4 text-center">
+                                    <div class="score-medium text-white font-bold py-2 px-4 rounded-lg">
+                                        78点
+                                    </div>
+                                    <div class="text-sm mt-2">チーム目標達成重視の関係性構築</div>
+                                </td>
+                                <td class="border border-gray-300 p-4 text-center">
+                                    <div class="highlight-badge text-white font-bold py-2 px-4 rounded-lg">
+                                        🥈 88点
+                                    </div>
+                                    <div class="text-sm mt-2">社会価値・環境貢献重視の価値観</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-4 font-semibold bg-green-50">最適化（Optimization）</td>
+                                <td class="border border-gray-300 p-4 text-center">
+                                    <div class="score-medium text-white font-bold py-2 px-4 rounded-lg">
+                                        75点
+                                    </div>
+                                    <div class="text-sm mt-2">論理的思考・問題解決への集中</div>
+                                </td>
+                                <td class="border border-gray-300 p-4 text-center">
+                                    <div class="highlight-badge text-white font-bold py-2 px-4 rounded-lg">
+                                        🥉 85点
+                                    </div>
+                                    <div class="text-sm mt-2">対話型問題解決とリーダーシップ発揮</div>
+                                </td>
+                                <td class="border border-gray-300 p-4 text-center">
+                                    <div class="score-medium text-white font-bold py-2 px-4 rounded-lg">
+                                        80点
+                                    </div>
+                                    <div class="text-sm mt-2">長期組織発展への貢献意識</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-4 font-semibold bg-yellow-50">補償（Compensation）</td>
+                                <td class="border border-gray-300 p-4 text-center">
+                                    <div class="score-low text-white font-bold py-2 px-4 rounded-lg">
+                                        65点
+                                    </div>
+                                    <div class="text-sm mt-2">デジタルスキル補強の必要性認識</div>
+                                </td>
+                                <td class="border border-gray-300 p-4 text-center">
+                                    <div class="score-medium text-white font-bold py-2 px-4 rounded-lg">
+                                        72点
+                                    </div>
+                                    <div class="text-sm mt-2">専門家協議による意思決定スタイル</div>
+                                </td>
+                                <td class="border border-gray-300 p-4 text-center">
+                                    <div class="score-medium text-white font-bold py-2 px-4 rounded-lg">
+                                        70点
+                                    </div>
+                                    <div class="text-sm mt-2">学習継続への積極的姿勢</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">
+                    <i class="fas fa-chart-line mr-2"></i>クロス分析 重要所見
+                </h4>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-white p-4 rounded-lg border-l-4 border-yellow-500">
+                        <h5 class="font-semibold text-yellow-700 mb-2">🥇 最高評価領域</h5>
+                        <p class="text-sm"><strong>選択×業務クラフティング（92点）</strong><br>
+                        新規事業・イノベーション創出への明確な志向と優れた目標設定能力</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border-l-4 border-silver-500">
+                        <h5 class="font-semibold text-gray-700 mb-2">🥈 第2位評価領域</h5>
+                        <p class="text-sm"><strong>選択×認知的クラフティング（88点）</strong><br>
+                        社会価値・環境貢献を重視する成熟した価値観と意味づけ能力</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border-l-4 border-orange-500">
+                        <h5 class="font-semibold text-orange-700 mb-2">🥉 第3位評価領域</h5>
+                        <p class="text-sm"><strong>最適化×関係性クラフティング（85点）</strong><br>
+                        対話を通じた問題解決とチーム力を活かすリーダーシップ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 詳細分析② 職種転換適性評価 -->
+        <section class="bg-white rounded-lg p-8 card-shadow">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-green-500 pb-2">
+                <i class="fas fa-exchange-alt text-green-600 mr-3"></i>詳細分析②：職種転換適性評価
+            </h2>
+
+            <!-- 適性スコア可視化 -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">適性スコア分析</h3>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <canvas id="aptitudeChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+
+            <!-- 上位3職種候補 -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">推奨職種転換先 TOP3</h3>
+                <div class="space-y-6">
+                    <!-- 第1位 -->
+                    <div class="border-l-4 border-yellow-500 bg-yellow-50 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="highlight-badge text-white font-bold py-2 px-4 rounded-full mr-4">
+                                🥇 第1位 95点
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-800">新規事業開発・イノベーション推進職</h4>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h5 class="font-semibold text-green-600 mb-3">🔸 活かせる強み</h5>
+                                <ul class="space-y-2 text-sm">
+                                    <li>• 34年間の幅広い事業領域経験</li>
+                                    <li>• 組織立ち上げ・変革の豊富な実績</li>
+                                    <li>• 国際市場での新規参入経験</li>
+                                    <li>• 「自社の強みとの適合性」重視の戦略思考</li>
+                                    <li>• 社会価値・環境貢献への強い意識</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-orange-600 mb-3">🔸 注意すべき弱み</h5>
+                                <ul class="space-y-2 text-sm">
+                                    <li>• デジタル技術スキルの向上が必要</li>
+                                    <li>• 最新の市場トレンド分析手法の習得</li>
+                                    <li>• 迅速な意思決定への適応</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 bg-white p-4 rounded-lg">
+                            <h5 class="font-semibold text-blue-600 mb-2">📚 重点リスキリング項目</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">デザイン思考</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">リーンスタートアップ</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">データ分析ツール</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">DX基礎知識</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">アジャイル手法</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 第2位 -->
+                    <div class="border-l-4 border-gray-500 bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-gray-500 text-white font-bold py-2 px-4 rounded-full mr-4">
+                                🥈 第2位 88点
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-800">人材開発・組織変革支援職</h4>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h5 class="font-semibold text-green-600 mb-3">🔸 活かせる強み</h5>
+                                <ul class="space-y-2 text-sm">
+                                    <li>• 「自己学習促進と環境整備」重視の指導観</li>
+                                    <li>• 多様な組織・文化での豊富な経験</li>
+                                    <li>• 協調性と対話型問題解決スキル</li>
+                                    <li>• チームマネジメント・リーダーシップ実績</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-orange-600 mb-3">🔸 注意すべき弱み</h5>
+                                <ul class="space-y-2 text-sm">
+                                    <li>• 現代的な人材開発手法の習得</li>
+                                    <li>• デジタルツールを活用した研修設計</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 bg-white p-4 rounded-lg">
+                            <h5 class="font-semibold text-blue-600 mb-2">📚 重点リスキリング項目</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">コーチング技法</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">組織開発理論</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">eラーニング設計</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">多様性マネジメント</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 第3位 -->
+                    <div class="border-l-4 border-orange-500 bg-orange-50 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-500 text-white font-bold py-2 px-4 rounded-full mr-4">
+                                🥉 第3位 82点
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-800">B2Bソリューション提案・コンサルティング職</h4>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h5 class="font-semibold text-green-600 mb-3">🔸 活かせる強み</h5>
+                                <ul class="space-y-2 text-sm">
+                                    <li>• 「顧客業界・業務への深い理解」重視</li>
+                                    <li>• 業務用製品での豊富な実務経験</li>
+                                    <li>• 問題解決能力と提案力</li>
+                                    <li>• 誠実さと約束を守る姿勢</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-orange-600 mb-3">🔸 注意すべき弱み</h5>
+                                <ul class="space-y-2 text-sm">
+                                    <li>• 最新の業界動向把握スキル</li>
+                                    <li>• デジタルツールを活用した提案技法</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 bg-white p-4 rounded-lg">
+                            <h5 class="font-semibold text-blue-600 mb-2">📚 重点リスキリング項目</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">ソリューション営業技法</span>
+                                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">業界分析手法</span>
+                                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">提案書作成スキル</span>
+                                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">CRM活用</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 推奨根拠 -->
+            <div class="bg-blue-50 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-blue-800 mb-4">
+                    <i class="fas fa-microscope mr-2"></i>職種転換推奨の評価ロジック
+                </h3>
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div class="bg-white p-4 rounded-lg">
+                        <h4 class="font-semibold text-blue-700 mb-2">適性マッチング</h4>
+                        <p class="text-sm text-gray-700">現在のスキル（マーケティング・商品企画）と新規事業志向の高い適合性（90%）</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-700 mb-2">成長可能性</h4>
+                        <p class="text-sm text-gray-700">「新しい挑戦を機会として捉える」前向き思考と学習意欲（85%）</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <h4 class="font-semibold text-orange-700 mb-2">実現可能性</h4>
+                        <p class="text-sm text-gray-700">必要スキルギャップは限定的で、6ヶ月程度の集中学習で対応可能（80%）</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <h4 class="font-semibold text-purple-700 mb-2">組織ニーズ</h4>
+                        <p class="text-sm text-gray-700">P社の戦略的注力分野（新規事業・DX・サステナビリティ）との高い整合性（95%）</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 詳細分析③ 潜在能力発掘 -->
+        <section class="bg-white rounded-lg p-8 card-shadow">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-purple-500 pb-2">
+                <i class="fas fa-gem text-purple-600 mr-3"></i>詳細分析③：潜在能力発掘・人間性分析
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-purple-800 mb-4">
+                            <i class="fas fa-heart mr-2"></i>根源的な強み分析
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-purple-400 pl-4">
+                                <h4 class="font-semibold mb-2">🌟 協力推進力</h4>
+                                <p class="text-sm text-gray-700">「人と協力して物事を進める力」は単なるチームワークを超えた、組織全体を巻き込む統合力として発揮されています。</p>
+                            </div>
+                            <div class="border-l-4 border-purple-400 pl-4">
+                                <h4 class="font-semibold mb-2">🌟 柔軟適応力</h4>
+                                <p class="text-sm text-gray-700">「状況に応じて柔軟に考え方や行動を変えられる適応力」は、変革期における貴重な組織資産となっています。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-green-800 mb-4">
+                            <i class="fas fa-lightbulb mr-2"></i>潜在化している価値
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-star text-yellow-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">変革リーダーシップ</h4>
+                                    <p class="text-sm text-gray-700">困っている人と一緒に解決の糸口を見つける能力は、組織変革時の抵抗を乗り越える貴重なスキル</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-star text-yellow-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">信頼構築力</h4>
+                                    <p class="text-sm text-gray-700">誠実に約束を守る姿勢と相手の立場に立つ思考は、ステークホルダー関係構築の基盤</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-star text-yellow-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">成長促進力</h4>
+                                    <p class="text-sm text-gray-700">「周囲の人たちと協力し、共に成長できる存在」は組織学習を加速する触媒的役割</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-4">
+                            <i class="fas fa-rocket mr-2"></i>思いがけない活躍領域の発見
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="bg-white p-4 rounded-lg border-l-4 border-blue-500">
+                                <h4 class="font-semibold text-blue-700 mb-2">🚀 組織変革ファシリテーター</h4>
+                                <p class="text-sm">冷静な状況把握と対話重視のスタイルは、変革抵抗の強い組織での合意形成に威力を発揮</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg border-l-4 border-green-500">
+                                <h4 class="font-semibold text-green-700 mb-2">🚀 次世代リーダー育成メンター</h4>
+                                <p class="text-sm">失敗を恐れない前向きさと粘り強さは、若手の挑戦を支える理想的なメンター資質</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg border-l-4 border-purple-500">
+                                <h4 class="font-semibold text-purple-700 mb-2">🚀 ソーシャルイノベーター</h4>
+                                <p class="text-sm">社会価値重視と環境貢献への意識は、SDGs時代の事業創造における重要な推進力</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-yellow-800 mb-4">
+                            <i class="fas fa-puzzle-piece mr-2"></i>クロス分析による新発見
+                        </h3>
+                        <div class="text-sm space-y-3">
+                            <p><strong>🔍 発見1：</strong> 技術的制約への適応力 - デジタルスキルの弱さを「協議型意思決定」で補償し、専門家との協働で成果創出</p>
+                            <p><strong>🔍 発見2：</strong> 文化的橋渡し役 - 国際経験と協調性の組み合わせで、グローバル組織での文化的多様性マネジメントに特異な強み</p>
+                            <p><strong>🔍 発見3：</strong> 持続可能な革新者 - 環境重視と新規挑戦志向の融合で、サステナブルイノベーションの推進者として希少価値</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学習コンテンツ提案 -->
+        <section class="bg-white rounded-lg p-8 card-shadow">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-red-500 pb-2">
+                <i class="fas fa-graduation-cap text-red-600 mr-3"></i>職種別学習コンテンツ提案
+            </h2>
+
+            <div class="space-y-8">
+                <!-- 新規事業開発 -->
+                <div class="bg-yellow-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-yellow-800 mb-4">
+                        🥇 新規事業開発・イノベーション推進職向け学習プログラム
+                    </h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3">基礎理論</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li>📹 デザイン思考入門（IDEO公式）</li>
+                                <li>📹 リーンスタートアップ実践講座</li>
+                                <li>📹 ビジネスモデルキャンバス活用法</li>
+                                <li>📹 イノベーション理論とケーススタディ</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3">実践スキル</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li>📹 市場調査・ニーズ分析手法</li>
+                                <li>📹 プロトタイプ作成ワークショップ</li>
+                                <li>📹 Excel活用データ分析</li>
+                                <li>📹 プレゼンテーション技法</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3">DX・技術</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li>📹 DX基礎知識とトレンド</li>
+                                <li>📹 AI・IoT活用事例研究</li>
+                                <li>📹 アジャイル開発入門</li>
+                                <li>📹 デジタルマーケティング基礎</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 人材開発 -->
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-green-800 mb-4">
+                        🥈 人材開発・組織変革支援職向け学習プログラム
+                    </h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3">コーチング・指導</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li>📹 エグゼクティブコーチング手法</li>
+                                <li>📹 1on1ミーティング実践</li>
+                                <li>📹 フィードバック技法</li>
+                                <li>📹 モチベーション理論</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3">組織開発</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li>📹 組織変革マネジメント</li>
+                                <li>📹 チームビルディング手法</li>
+                                <li>📹 ダイバーシティ&インクルージョン</li>
+                                <li>📹 ファシリテーション技術</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3">デジタル活用</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li>📹 eラーニング設計・制作</li>
+                                <li>📹 LMS活用法</li>
+                                <li>📹 オンライン研修運営</li>
+                                <li>📹 人事データ分析基礎</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- B2Bソリューション -->
+                <div class="bg-orange-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-orange-800 mb-4">
+                        🥉 B2Bソリューション提案・コンサルティング職向け学習プログラム
+                    </h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3">営業・提案</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li>📹 ソリューション営業技法</li>
+                                <li>📹 SPIN営業メソッド</li>
+                                <li>📹 提案書作成実践</li>
+                                <li>📹 商談プロセス管理</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3">業界知識</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li>📹 各業界トレンド分析</li>
+                                <li>📹 競合分析手法</li>
+                                <li>📹 ROI・効果測定方法</li>
+                                <li>📹 ケーススタディ研究</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3">ツール活用</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li>📹 CRM/SFA活用法</li>
+                                <li>📹 オンライン商談技術</li>
+                                <li>📹 動画プレゼン制作</li>
+                                <li>📹 MA（マーケティングオートメーション）基礎</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 総合評価・推奨事項 -->
+        <section class="bg-gradient-to-br from-blue-600 to-purple-700 text-white rounded-lg p-8 card-shadow">
+            <h2 class="text-3xl font-bold mb-6">
+                <i class="fas fa-award mr-3"></i>総合評価・推奨事項
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">🎯 最終推奨</h3>
+                    <div class="bg-white bg-opacity-20 p-6 rounded-lg">
+                        <p class="text-lg mb-4"><strong>新規事業開発・イノベーション推進職</strong>への転換を強く推奨いたします。</p>
+                        <ul class="space-y-2 text-sm">
+                            <li>✅ HM様の34年間の豊富な経験と新規挑戦への強い意欲が最適にマッチ</li>
+                            <li>✅ P社の戦略的注力分野との高い整合性（95%適合率）</li>
+                            <li>✅ 6ヶ月程度の集中的リスキリングで十分対応可能</li>
+                            <li>✅ 社会価値・環境貢献重視の価値観がSDGs時代に適合</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">📋 実行計画</h3>
+                    <div class="bg-white bg-opacity-20 p-6 rounded-lg">
+                        <div class="space-y-3 text-sm">
+                            <div><strong>Phase 1（1-2ヶ月）:</strong> デザイン思考・リーンスタートアップ基礎習得</div>
+                            <div><strong>Phase 2（3-4ヶ月）:</strong> データ分析ツール・DX基礎知識習得</div>
+                            <div><strong>Phase 3（5-6ヶ月）:</strong> 実際のプロジェクト参加による実践経験</div>
+                            <div><strong>継続支援:</strong> メンター制度、専門家ネットワークへのアクセス提供</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <p class="text-lg font-semibold">HM様の新たなキャリアステージでの更なるご活躍を心より期待しております。</p>
+                <p class="text-sm mt-2 opacity-80">※本分析は、HM様の回答内容と豊富な経験を基に、科学的手法により実施されました。</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm opacity-80">© 2024 P社 働き方アドバイザー | キャリア分析レポート</p>
+        </div>
+    </div>
+
+    <script>
+        // 適性スコアチャートの作成
+        const ctx = document.getElementById('aptitudeChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['適性マッチング', '成長可能性', '実現可能性', '組織ニーズ', '総合評価'],
+                datasets: [{
+                    label: '新規事業開発職',
+                    data: [90, 85, 80, 95, 95],
+                    backgroundColor: 'rgba(255, 193, 7, 0.2)',
+                    borderColor: 'rgba(255, 193, 7, 1)',
+                    borderWidth: 2
+                }, {
+                    label: '人材開発職',
+                    data: [85, 90, 85, 80, 88],
+                    backgroundColor: 'rgba(40, 167, 69, 0.2)',
+                    borderColor: 'rgba(40, 167, 69, 1)',
+                    borderWidth: 2
+                }, {
+                    label: 'B2Bソリューション職',
+                    data: [80, 75, 90, 85, 82],
+                    backgroundColor: 'rgba(255, 133, 27, 0.2)',
+                    borderColor: 'rgba(255, 133, 27, 1)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: {
+                            stepSize: 20
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
